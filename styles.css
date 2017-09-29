@@ -1,0 +1,19 @@
+body {
+    background-color: purple;
+}
+
+button {
+    display: block;
+}
+
+.squares {
+    background-color: salmon;
+    height: 7em;
+    width: 7em;
+    margin: 2em 2em;
+    float: left;
+    
+}
+
+
+
