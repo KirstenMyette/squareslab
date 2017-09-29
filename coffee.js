@@ -1,4 +1,4 @@
-var countMe = 0;
+var countMe = 1;
 
 document.addEventListener("DOMContentLoaded", function () {
     var button = document.createElement("button");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 div.className = ("squares");
                 div.id = countMe;
                         countMe++;
-                div.style.textAlign = "center";
+                // div.style.textAlign = "center";
                 document.body.appendChild(div);
                 div.addEventListener("mouseover", function () {
                 div.innerHTML = div.id;
