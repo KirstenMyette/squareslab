@@ -2,7 +2,7 @@ var countMe = 1;
 var timer = 0;
 var delay = 200;
 var prevent = false
-var colors = ['red', 'green', 'blue', 'orange', 'yellow'];
+var colors = ['blueviolet', 'darkmagenta', 'darkviolet', 'deeppink', 'indigo', 'mediumorchid', 'mediumpurple', 'mediumblue', 'orchid', 'plum', 'purple', 'rebeccapurple'];
 
 
 
@@ -34,20 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
             function doClickAction() {
                 div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];;
             }
-            // timer = setTimeout(function () {
-            //     if (!prevent) {
-            //         doClickAction(
-            //         );
-            //     }
-            //     prevent = false;
-            // }, delay);
+            timer = setTimeout(function () {
+                if (!prevent) {
+                    doClickAction(
+                    );
+                }
+                prevent = false;
+            }, delay);
         });
 
 
     //DOUBLE CLICK
         div.addEventListener("dblclick", function() {
-            // clearTimeout(timer);
-            // prevent = true;
+            clearTimeout(timer);
+            prevent = true;
             if (div.previousSibling === button) {
                 alert("No Sqare To Delete");
             }
