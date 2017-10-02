@@ -7,12 +7,14 @@ button {
 }
 
 .squares {
-    background-color: salmon;
+    background-color: black;
+    color: white;
     height: 7em;
     width: 7em;
     margin: 2em 2em;
     float: left;
     text-align: center;
+    
     
     
 }
