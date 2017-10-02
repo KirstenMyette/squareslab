@@ -10,9 +10,10 @@ var colors = ['blueviolet', 'darkmagenta', 'darkviolet', 'deeppink', 'indigo', '
 document.addEventListener("DOMContentLoaded", function () {
     var button = document.createElement("button");
     button.innerText = "Add Squares";
-
-
     document.body.appendChild(button);
+
+
+//Button does the things
 
     button.addEventListener("click", function () {
         var div = document.createElement("div");
@@ -59,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
             else if (div.nextSibling === null) {
                 alert("No Sqare To Delete");
             }
-            else if (countMe % 2 === 0) {
+            
+            else if (countMe%2 === 0) {
                 div.nextSibling.remove();
             }
 
